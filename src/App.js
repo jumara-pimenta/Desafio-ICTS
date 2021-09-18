@@ -1,6 +1,7 @@
 
 import Header from "./Components/Header";
 import Body from "./Components/Body";
+import Footer from "./Components/Footer"
 import './global.css'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div>
      <Header />
      <Body />
+     <Footer></Footer>
 
     </div>
   );  

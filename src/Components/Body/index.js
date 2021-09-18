@@ -19,15 +19,7 @@ const Body = () => {
       .then((data) => setDevice(data));
   }, []);
 
-    // const consumption = [5.4, 490.8, 27, 8.1, 545.4, 10.8, 15.75, 62.25, 2.25, 110.7, 2.7]
     
-    // const soma = consumption.reduce(function(soma, i){
-    //     return soma + i;
-    // }) 
-
-    // return (soma)
-
-
   return (
     <div className="body">
       <h1 className="title">Resumo</h1>
@@ -42,60 +34,67 @@ const Body = () => {
             />
             <p>{rooms.temperature}ºC</p>
           </div>
-        ))}
-        
+        ))}   
       </section>
-      <section className="consumo"> 
+
+      <section className="sensor"> 
         {devices.map((devices) => (
-            <div className="consumo-total" key={devices.id}>
+            <div className="geral-sensor" key={devices.id}>
              <p>O aparelho {devices.name}</p>
              <p>do cômodo {devices.casaId}</p>
-            <p>está consumindo  {devices.name} no momento</p>         
+             <p>consumiu {devices.consumption}KW até momento</p>         
             </div>
         )
         )}     
-              
-          {/* <div className="consumo-total">
+      </section>
+
+      <section className="consumption">
+          <div className="consumption-total">
             Consumo total de energia no dia
-            <div className="bgConsumo">80,25 KWh</div>
+            <div className="bgConsumption">1.283,85 KWh</div>
           </div>
           <section className="section-devices">
-            <div className="devices">
-                <div className="bgDevices"></div>
-                <div className="devices-content">
-                    <p>Quarto 1</p>
-                    <h3>Ar condicionado</h3>
-                    <h1>80,25 KWh</h1>
+                <h2> Sensor com maior consumo de energia </h2>
+                    <section className="devices-consumption">
+                        <div className="devices">
+                            <div className="bgDevices"></div>
+                            <div className="devices-content">
+                                <p>Quarto 2</p>
+                                <h3>Ar condicionado</h3>
+                                <h1>545,40 KWh</h1>
+                            </div>
+                        </div>
+                        <div className="devices">
+                            <div className="bgDevices"></div>
+                            <div className="devices-content">
+                                <p>Quarto 1</p>
+                                <h3>Ar condicionado</h3>
+                                <h1>490,80 KWh</h1>
+                            </div>
+                        </div>
+                        <div className="devices">
+                            <div className="bgDevices"></div>
+                            <div className="devices-content">
+                                <p>Cozinha</p>
+                                <h3>Microondas</h3>
+                                <h1>110,70 KWh</h1>
+                            </div>
+                        </div>
+                        <div className="devices">
+                    <div className="bgDevices"></div>
+                    <div className="devices-content">
+                        <p>Sala</p>
+                        <h3>Ar condicionado</h3>
+                        <h1>62,25 KWh</h1>
+                    </div>
                 </div>
-            </div>
-            <div className="devices">
-                <div className="bgDevices"></div>
-                <div className="devices-content">
-                    <p>Quarto 1</p>
-                    <h3>Ar condicionado</h3>
-                    <h1>80,25 KWh</h1>
-                </div>
-            </div>
-            <div className="devices">
-                <div className="bgDevices"></div>
-                <div className="devices-content">
-                    <p>Quarto 1</p>
-                    <h3>Ar condicionado</h3>
-                    <h1>80,25 KWh</h1>
-                </div>
-            </div>
-            <div className="devices">
-                <div className="bgDevices"></div>
-                <div className="devices-content">
-                    <p>Quarto 1</p>
-                    <h3>Ar condicionado</h3>
-                    <h1>80,25 KWh</h1>
-                </div>
-            </div>
-          </section> */}
+                    </section>
+          </section>
       </section>
     </div>
   );
+
+
 };
 
 export default Body;

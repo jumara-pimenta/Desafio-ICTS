@@ -1,5 +1,6 @@
 .body {
     background-color: #f1f0f0;
+    height: 750px;
 }
 
 h3 {
@@ -12,7 +13,9 @@ p {
 
 h1 {
     font-size: 20px;
+    margin-left: 15px;
 }
+
 
 .main-card {
     display: flex;
@@ -49,16 +52,38 @@ h1 {
     margin-left: 95px;
 }
 
-.consumo {
-    width: 100%;
+.sensor {
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 1.1rem;
     padding: 16px;
 }
 
-.consumo-total{
+.geral-sensor{
+    background-color: white;
+    padding: 16px;
+    width: 22%;
+    margin-right: 15px;
+    margin-top: 15px;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 0 1em rgb(190, 190, 190);
+}
+
+.consumption {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 16px;
+    padding-right: 16px;
+
+}
+
+.consumption-total{
     background-color: white;
     padding: 16px;
     width: 30%;
@@ -66,21 +91,30 @@ h1 {
     align-items: center;
     border-radius: 8px;
     box-shadow: 0 0 1em rgb(190, 190, 190);
+    height: 185px;
 }
 
 .section-devices {
     display: flex;
     flex-wrap: nowrap;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     width: 70%;
+}
+
+.devices-consumption {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
 }
 
 .devices{
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 1em rgb(190, 190, 190);
-    border-radius: 8px;
-
+    border-radius: 10px;
     width: 100%;
     margin-right: 15px;
     margin-right: 15px;
@@ -92,6 +126,7 @@ h1 {
     height: 60px;
     margin-bottom: 8px;
     padding: 16px;  
+    border-radius: 8px 8px 0 0;
 }
 
 .devices-content {
@@ -103,7 +138,7 @@ h1 {
     margin-bottom: 8px;
 }
 
-.bgConsumo {
+.bgConsumption {
     background-color: #e6e8e7;
     padding: 24px 16px;
     border-radius: 8px;
