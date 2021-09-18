@@ -9,9 +9,6 @@ Baseando-se em sensores de temperatura e de consumo de energia para o monitorame
 
 HTML, CSS, JavaScript, React, Node, npm, React Google Charts e Netlify.
 
-<br>
-<br>
-
 ## 📁 Arquitetura 
 
 ```
@@ -49,10 +46,8 @@ HTML, CSS, JavaScript, React, Node, npm, React Google Charts e Netlify.
    |
    |
    
-
 ```
-<br>
-<br>
+
 
 ### Site
 
@@ -60,4 +55,5 @@ Para visualizar o site <a href="https://desafio-icts.netlify.app/" target="_blan
   
 ### Autora
   
-- [github](https://github.com/jumara-pimenta)
+- Linkedin - [Jumara Pimenta](https://www.linkedin.com/in/jumara-souza-pimenta/)
+- GitHub - [Jumara Pimenta](https://github.com/jumara-pimenta)
