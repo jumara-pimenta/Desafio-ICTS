@@ -12,32 +12,24 @@ HTML, CSS, JavaScript, React, Node, npm, React Google Charts e Netlify.
 ## 📁 Arquitetura 
 
 ```
- 📁 app-divertido
+ 📁 desafioicts
    |
    |-  📁 src
    |    |
    |    |- 📁 assets
-   |         |- 📄 imagem.svg
+   |         |- 📄 Logo.png
+   |         |- 📄 logoicts.png
    |
    |    |- 📁 components
-   |         |- 📁 Banner 
+   |         |- 📁 Body 
    |                |- 📄 index.js
    |                |- 📄 styles.css
-   |         |- 📁 Menu 
+   |         |- 📁 Footer 
    |                |- 📄 index.js
    |                |- 📄 styles.css
-   |
-   |    |- 📁 pages
-   |         |- 📁 Home 
+   |         |- 📁 Header 
    |                |- 📄 index.js
    |                |- 📄 styles.css
-   |         |- 📁 Simpsons 
-   |                |- 📄 index.js
-   |                |- 📄 styles.css
-   |
-   |    |- 📁 routes
-   |         |- 📄 Routes.js 
-   |    
    |
    |
    |    |- 📄 App.js
