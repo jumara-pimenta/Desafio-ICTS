@@ -1,6 +1,6 @@
 .body {
     background-color: #f1f0f0;
-    height: 750px;
+    height: 1100px;
 }
 
 h3 {
@@ -80,6 +80,7 @@ h1 {
     flex-direction: row;
     padding-left: 16px;
     padding-right: 16px;
+    margin: 40px 5px 30px 5px;
 
 }
 
@@ -121,12 +122,19 @@ h1 {
 }
 
 .bgDevices {
-    background-color: red;
     width: 100%;
     height: 60px;
     margin-bottom: 8px;
     padding: 16px;  
     border-radius: 8px 8px 0 0;
+}
+
+.bgDevices.red{
+    background-color: red;
+}
+
+.bgDevices.green{
+    background-color: green;
 }
 
 .devices-content {
@@ -143,4 +151,19 @@ h1 {
     padding: 24px 16px;
     border-radius: 8px;
     margin-top: 24px;
+}
+
+.chart-time{
+    display: flex;
+}
+
+.chart {
+    max-width: 900px;
+}
+
+.chart-device {
+    width: 600px;
+    height: 300px;
+    margin-top: 30px;
+    margin-left: 30px;
 }
