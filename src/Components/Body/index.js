@@ -110,6 +110,7 @@ const Body = () => {
               options={{
                 title: "Tempo usado por cada dispositivo",
                 chartArea: { width: "40%" },
+                colors: ['#008643'],
                 hAxis: {
                   title: "Dispositivo",
                   minValue: 0,
@@ -139,6 +140,7 @@ const Body = () => {
               options={{
                 title: "Tempo usado por cada sensor",
                 chartArea: { width: "40%" },
+                colors: ['#008643'],  
                 hAxis: {
                   title: "Sensor",
                   minValue: 0,
